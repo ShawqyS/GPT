@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+    <ion-searchbar placeholder="Zoek evenementen"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let event of events" (click)="navigateToEventDetail(event)">
+        <ion-thumbnail slot="start">
+          <img [src]="event.image">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{ event.title }}</h2>
+          <p>{{ event.date | date }}</p>
+          <p>{{ event.location }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  

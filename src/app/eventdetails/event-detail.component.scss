@@ -1,0 +1,15 @@
+ion-header {
+    --background: secondary;
+  }
+  
+  img {
+    max-width: 100%; /* Zorgt ervoor dat de afbeelding nooit breder is dan het scherm */
+    height: auto; /* Behoudt de aspect ratio van de afbeelding */
+    display: block; /* Zorgt dat de afbeelding netjes wordt uitgelijnd */
+    margin: 0 auto; /* Centreert de afbeelding */
+  }
+  
+  ion-button {
+    --background: tertiary;
+  }
+  
